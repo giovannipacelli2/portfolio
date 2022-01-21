@@ -144,11 +144,11 @@ body{
 }
 /*-------------2-SECTION----------------------*/
 
-.first-section{
+#first-section{
   padding: 0.5em;
 }
 
-.second-section{
+#second-section{
   background-color: #cbecead7; /*Teal 100*/
   border-radius: 0.2em;
 
