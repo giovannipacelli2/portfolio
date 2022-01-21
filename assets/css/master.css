@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
-
 header, article, footer, section, figure{
   display: block;
 }
@@ -60,9 +55,10 @@ header, article, footer, section, figure{
   font-size: 1em;
 }
 
-.text-container h3{
+.text-container h3,.info-container h3{
   color: #004D40; /*Teal 900*/
-  font-style:oblique;
+  font-family: cursive;
+  font-style: oblique;
 }
 
 .info-container{
@@ -71,9 +67,8 @@ header, article, footer, section, figure{
 
 body{
   background-color: #E0F2F1; /*Teal 50*/
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Luxurious Roman', cursive;
-  /*font-family: 'Merriweather', serif;*/
+  font-family: 'Helvetica', 'Arial', sans-serif;
+
 }
 
 /*-------------HEADER-----------------------*/
@@ -115,7 +110,7 @@ body{
 .header a{
   color: #E0F2F1; /*Teal A100*/
   font-size: 1em;
-  font-family: 'Merriweather', cursive;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   text-decoration: none;
   padding: 0;
 }
