@@ -17,17 +17,23 @@
   display: none;
   color: #004D40; /*Teal 900*/
 }
-/*-------------2-SECTION----------------------*/
 
 #first-section{
   padding: 0.5em;
 }
+/*-------------2-SECTION----------------------*/
 
 #second-section{
   background-color: #cbecead7; /*Teal 100*/
   border-radius: 0.2em;
 
   padding: 0.5em;
+}
+
+#competence-photos{
+  margin:0;
+  margin-right: auto;
+  width: auto;
 }
 
 .start-to-impact{
@@ -70,6 +76,10 @@
 }
 
 @media only screen and (max-width:576px){
+
+  #competence-photos{
+    width: 100%;
+  }
 
     
 }
