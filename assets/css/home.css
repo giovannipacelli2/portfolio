@@ -15,7 +15,9 @@
 
 .other{
   display: none;
-  color: #004D40; /*Teal 900*/
+  color: #212121; /*Gray 900*/
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 #first-section{
@@ -24,7 +26,7 @@
 /*-------------2-SECTION----------------------*/
 
 #second-section{
-  background-color: #cbecead7; /*Teal 100*/
+  background-color: #EEEEEE; /*Gray 200*/
   border-radius: 0.2em;
 
   padding: 0.5em;
@@ -43,10 +45,12 @@
 
 .start-to-impact{
   width:40%;
+  opacity: 90%;
 }
 
 .competence-icon{
   width: 20%;
+  opacity: 90%;
 }
 
 /*-----------Smartphone-Ottimization----------*/
