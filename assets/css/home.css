@@ -36,6 +36,11 @@
   width: auto;
 }
 
+.competence-icon:last-of-type{
+  padding-bottom: 5px;
+  width: 19%;
+}
+
 .start-to-impact{
   width:40%;
 }
@@ -80,7 +85,6 @@
   #competence-photos{
     width: 100%;
   }
-
     
 }
 
