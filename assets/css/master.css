@@ -159,6 +159,10 @@ body{
   width:40%;
 }
 
+.competence-icon{
+  width: 20%;
+}
+
 /*-----------Smartphone-Ottimization----------*/
 
 @media only screen and (max-width:465px){
