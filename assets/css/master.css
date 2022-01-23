@@ -10,7 +10,8 @@ header, article, footer, section, figure{
 
 #page{
   width: 100%;
-  height: 1400px;
+  min-height: 1400px;
+  padding-top: 3.5em;
 }
 
 /*----------------DEGUB----------------*/
@@ -58,7 +59,7 @@ body{
 
 .g-link:link, .g-link:visited, .g-link:active{
   color: #212121; /*Gray 900*/
-  font-style: italic;
+  font-style: normal;
 }
 
 .g-link:hover, .g-link:focus{
@@ -66,6 +67,7 @@ body{
 
   background-color: #FAFAFA; /*Gray 50*/
   border-radius: 0.2em;
+  font-style: normal;
 }
 
 body{
@@ -96,8 +98,13 @@ body{
 
 
 .header{
+  border-bottom-left-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+
   height: 3.5em;
-  border-radius: 0.2em;
+  position: fixed; 
+  z-index: 5;
+  width: 100%;
 }
 /*----Navbar-Home----*/
 .query-576-on{
@@ -139,11 +146,12 @@ body{
 /*----------------FOOTER----------------------*/
 
 .footer{
-  height: 12em;
+  height: 14em;
   margin: auto;
   margin-bottom: 0;
 
-  border-radius: 0.2em;
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em;
   color: #212121; /*Gray 900*/
   display: flex;
   align-items: center;
@@ -169,6 +177,11 @@ body{
 
 .social img{
   width: 25px;
+}
+
+#torna-su{
+  font-weight: 700;
+  font-size: 1.5em;
 }
 
 
