@@ -1,0 +1,202 @@
+
+/*-------------HEADER-----------------------*/
+
+
+/*-------------1-SECTION----------------------*/
+
+#my-photo{
+  margin: 0 0 0 auto;
+  width: 100%;
+}
+
+.description p{
+  display: inline;
+}
+
+.other{
+  display: none;
+  color: #212121; /*Gray 900*/
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#first-section{
+  padding: 0.5em;
+}
+/*-------------2-SECTION----------------------*/
+
+#second-section{
+  background-color: #EEEEEE; /*Gray 200*/
+  border-radius: 0.2em;
+
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+#competence-photos{
+  margin:0;
+  margin-right: auto;
+  width: auto;
+}
+
+.competence-icon:last-of-type{
+  padding-bottom: 5px;
+  width: 19%;
+}
+
+/*-------Competenze-----*/
+
+.start-to-impact{
+  width:40%;
+  opacity: 90%;
+}
+
+.competence-icon{
+  width: 20%;
+  opacity: 90%;
+}
+
+/*-------Curriculum-----*/
+
+.cv-icon{
+  width: 18%;
+  height: 18%;
+  opacity: 90%;
+}
+
+.cv-section{
+  display: flex;
+}
+
+.cv-section p{
+  margin-left: 2%;
+}
+
+#passions-h3{
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1.5em;;
+}
+
+hr{
+  margin: 1.5em 0;
+  height: 1.5px;
+  opacity: 0.15;
+}
+
+hr:not([size]) {
+  height: 1.5px;    /*Hack bootstrap :P */
+}
+
+/*-----Palestra-e-dieta-----*/
+
+#second-section h3{
+  font-family: cursive;
+  font-style: oblique;
+}
+
+.fitness-section{
+  display: flex;
+}
+
+.fitness-img{
+  width:50%;
+  border-radius: 0.2em;
+  opacity: 95%;
+}
+
+.fitness-img:first-of-type{
+  margin-right: 1%;
+}
+
+
+/*-----------Smartphone-Ottimization----------*/
+
+@media only screen and (max-width:465px){
+
+  .other{
+    display: inline;
+  }
+
+  #continue{
+    display: none;
+  }
+
+  .description:hover #continue{
+    display: inline;
+  }
+  .description:focus #continue{
+    display: inline;
+  }
+
+  .description:hover .other{
+    display: none;
+  }
+  .description:focus .other{
+    display: none;
+  }
+
+  .start-to-impact{
+    width:80%;
+  }
+
+}
+
+@media only screen and (max-width:576px){
+
+  #competence-photos{
+    width: 100%;
+  }
+    
+}
+
+
+/*--------------Desktop-Media-Query------------*/
+
+@media only screen and (min-width:768px){
+
+/*-------------GENERIC-----------------------*/
+
+  .query-768-width-60{
+    width: 60%;
+  }
+
+  .info-container{
+    width: 50%;
+  }
+
+  .to-left{
+    margin: auto;
+    margin-left: 0;
+  }
+
+  .to-right{
+    margin: auto;
+    margin-right: 0;
+  }
+
+/*-------------1-SECTION----------------------*/
+
+  #my-photo{
+    width: 45%;
+  }
+/*-------------2-SECTION----------------------*/
+
+  .start-to-impact{
+    width: 40%;
+  }
+
+  .cv-icon{
+    width: 20%;
+    height: 20%;
+  }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:992px){
+
+  #my-photo{
+    width: 55%;
+  }
+
+}
