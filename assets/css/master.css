@@ -41,7 +41,7 @@ header, article, footer, section, figure{
   font-size: 1em;
 }
 
-.text-container h3,.info-container h3{
+h3{
   font-family: cursive;
   font-style: oblique;
 }
@@ -52,7 +52,7 @@ header, article, footer, section, figure{
 
 body{
   font-family: 'Helvetica', 'Arial', sans-serif;
-  line-height: 1.6em;
+  line-height: 1.5em;
 
 }
 
