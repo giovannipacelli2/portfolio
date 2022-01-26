@@ -86,7 +86,7 @@ hr{
   background: linear-gradient(135deg, #E0E0E0, #616161 300%); /*Gray 300 + Gray 700*/
 }
 
-.text-container h3,.info-container h3{
+h3{
   color: #212121; /*Gray 900*/
 }
 
@@ -230,6 +230,14 @@ hr{
   }
   
   /*--------------------------------*/
+
+  body{
+    font-size:1.2em;
+  }
+
+  h3{
+    font-size: 1.4em;
+  }
     
 }
 
