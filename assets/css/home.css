@@ -47,7 +47,7 @@
 /*-------Competenze-----*/
 
 .start-to-impact{
-  width:40%;
+  width:45%;
   opacity: 90%;
 }
 
@@ -112,6 +112,18 @@ hr:not([size]) {
 
 /*-----------Smartphone-Ottimization----------*/
 
+@media only screen and (max-width:576px){
+
+  #competence-photos{
+    width: 100%;
+  }
+
+  .start-to-impact{
+    width:50%;
+  }
+    
+}
+
 @media only screen and (max-width:465px){
 
   .other{
@@ -142,13 +154,6 @@ hr:not([size]) {
 
 }
 
-@media only screen and (max-width:576px){
-
-  #competence-photos{
-    width: 100%;
-  }
-    
-}
 
 
 /*--------------Desktop-Media-Query------------*/
@@ -197,6 +202,10 @@ hr:not([size]) {
 
   #my-photo{
     width: 55%;
+  }
+
+  .start-to-impact{
+    width:55%;
   }
 
 }
