@@ -48,6 +48,9 @@ section ol{
 
   .photo{
       width: 100%;
+      opacity: 0.9;
+      border-radius: 0.2em;
+
       margin: 1.6em auto;
   }
 
