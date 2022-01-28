@@ -3,6 +3,28 @@ h3,p{
     margin:0;
 }
 
+p{
+    margin-bottom: 1em;
+}
+
+h3{
+    display: inline-block;
+}
+
+section{
+
+    text-align: left;
+    margin: 0 auto;
+}
+
+section p:last-of-type{
+    margin-bottom: 0em;
+}
+
+section li>p:first-of-type{
+    margin-top:1em;
+}
+
 /*-------------1-SECTION----------------------*/
 
 .article-container{
@@ -13,46 +35,38 @@ h3,p{
 
 .article{
     background-color: #EEEEEE; /*Gray 200*/
+    border: 1px solid #EEEEEE; /*Gray 200*/;
     border-radius: 0.2em;
     width: 100%;
   
-    padding: 0.8em 10%;
-    padding-bottom: 0.5em;;
-  }
-
-  .article h3{
-      text-align: center;
-
-  }
-
-  section p{
-      margin-bottom: 1em;
-  }
-
-  section p:last-of-type{
-    margin-bottom: 0em;
-}
-section ol{
-    margin-bottom: 0em;
+    padding: 0 10%;
+    padding-bottom: 1em;;
 }
 
-  section{
+.heading{
+    margin: 1.6em auto;
+    display: flex;
+    justify-content: center;
+}
 
-      text-align: left;
-      margin: 0.8em auto 0 auto;
-  }
+.photo{
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 0.2em;
+
+    margin: 1.6em auto;
+}
+
+.no-margin{
+    margin:0;
+}
+
 
   .margin-top-1em{
       margin-top: 1em;
   }
 
-  .photo{
-      width: 100%;
-      opacity: 0.9;
-      border-radius: 0.2em;
-
-      margin: 1.6em auto;
-  }
+  
 
   /*-----------Smartphone-Ottimization----------*/
 
