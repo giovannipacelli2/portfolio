@@ -31,11 +31,27 @@ header, article, footer, section, figure{
   text-align: center;
 }
 
-.text-container{
-  border-radius: 0.3em;
+.text-container-box{
+  border-radius: 1em;
 
-  padding: 0.5em 1em;
   margin: 1em auto;
+  width: 100%;
+
+}
+
+.text-container-bar{
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  height: 1em;
+
+  background-color: #212121; /*Gray 900*/
+  border: 2px solid #212121; /*Gray 900*/
+  opacity: 90%;
+  
+}
+
+.text-container{
+  padding: 0.5em 1em;
   width: 100%;
 
   font-size: 1em;
@@ -80,7 +96,7 @@ hr{
   background-color: #616161; /*Gray 700*/
 }
 
-.text-container{
+.text-container-box{
   border:2px solid #212121; /*Gray 900*/
   /*background-color: #BDBDBD; Gray 400*/
   background: linear-gradient(135deg, #E0E0E0, #616161 300%); /*Gray 300 + Gray 700*/
@@ -248,7 +264,7 @@ h3{
 
 /*-------------GENERIC-----------------------*/
 
-  .text-container{
+  .text-container-box{
     margin: 1em;
     margin-left: 0;
   }
