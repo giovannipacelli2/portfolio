@@ -1,3 +1,6 @@
+
+/*---------------GENERIC----------------------*/
+
 h3,p{
     padding:0;
     margin:0;
@@ -27,6 +30,12 @@ section li>p:first-of-type{
 
 /*-------------1-SECTION----------------------*/
 
+.heading{       /*Contain the H3 element*/
+    margin: 1.6em auto;
+    display: flex;
+    justify-content: center;
+}
+
 .article-container{
     padding: 1.5em 0;
     width: 70%;
@@ -43,19 +52,15 @@ section li>p:first-of-type{
     padding-bottom: 1em;;
 }
 
-.heading{
-    margin: 1.6em auto;
-    display: flex;
-    justify-content: center;
-}
-
-.photo{
+.photo{     /*manage all photos*/
     width: 100%;
     opacity: 0.9;
     border-radius: 0.2em;
 
     margin: 1.6em auto;
 }
+
+/*---------Margin-Utility----------*/
 
 .no-margin{
     margin:0;

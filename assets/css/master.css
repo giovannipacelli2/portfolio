@@ -70,6 +70,21 @@ body{
 
 /*-----------------COLOR--------------------*/
 
+body{
+  background-color: #FAFAFA; /*Gray 50*/
+}
+
+hr{
+  color: #616161; /*Gray 700*/
+  background-color: #616161; /*Gray 700*/
+}
+
+h3{
+  color: #212121; /*Gray 900*/
+}
+
+        /*----Link-----*/
+
 .g-link:link, .g-link:visited, .g-link:active{
   color: #212121; /*Gray 900*/
   font-style: normal;
@@ -83,14 +98,7 @@ body{
   font-style: normal;
 }
 
-body{
-  background-color: #FAFAFA; /*Gray 50*/
-}
-
-hr{
-  color: #616161; /*Gray 700*/
-  background-color: #616161; /*Gray 700*/
-}
+        /*-------------*/
 
 .text-container-box{
   border:1px solid #6161617a; /*Gray 700 transparent*/
@@ -102,10 +110,6 @@ hr{
   background-color: #212121; /*Gray 900*/
   border: 1px solid #212121; /*Gray 900*/
   opacity: 90%;  
-}
-
-h3{
-  color: #212121; /*Gray 900*/
 }
 
 .header{

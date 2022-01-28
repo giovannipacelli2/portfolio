@@ -1,19 +1,28 @@
 
-/*-------------HEADER-----------------------*/
+/*---------------GENERIC----------------------*/
 
+hr{
+  margin: 1.5em 0;
+  height: 1.5px;
+  opacity: 0.15;
+}
+
+hr:not([size]) {
+  height: 1.5px;    /*Hack bootstrap :P */
+}
 
 /*-------------1-SECTION----------------------*/
 
-#my-photo{
+#my-photo{    
   margin: 0 0 0 auto;
   width: 100%;
 }
 
-.description p{
+.description p{   
   display: inline;
 }
 
-.other{
+.other{   /*class that manages the display of the word "continua" */
   display: none;
   color: #212121; /*Gray 900*/
   font-weight: 600;
@@ -44,7 +53,7 @@
   width: 19%;
 }
 
-/*-------Competenze-----*/
+/*-------Competence-----*/
 
 .start-to-impact{
   width:45%;
@@ -72,23 +81,15 @@
   margin-left: 2%;
 }
 
+/*-------Passions-----*/
+
 #passions-h3{
   text-align: center;
   margin: 0;
   margin-bottom: 1.5em;;
 }
 
-hr{
-  margin: 1.5em 0;
-  height: 1.5px;
-  opacity: 0.15;
-}
-
-hr:not([size]) {
-  height: 1.5px;    /*Hack bootstrap :P */
-}
-
-/*-----Palestra-e-dieta-----*/
+/*-----Heal-Fitness-----*/
 
 #second-section h3{
   font-family: cursive;
