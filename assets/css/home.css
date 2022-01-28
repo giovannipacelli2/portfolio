@@ -180,6 +180,14 @@ hr:not([size]) {
     margin-right: 0;
   }
 
+  .shadow-left{
+    box-shadow: -5px 8px 10px #212121; /*Gray 900*/
+  }
+
+  .shadow-right{
+    box-shadow: 5px 8px 10px #212121; /*Gray 900*/
+  }
+
 /*-------------1-SECTION----------------------*/
 
   #my-photo{
