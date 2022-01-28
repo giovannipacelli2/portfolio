@@ -11,18 +11,18 @@ header, article, footer, section, figure{
 #page{
   width: 100%;
   min-height: 1400px;
-  padding-top: 3.5em;
+  padding-top: 2.9em;
 }
 
 /*-------------------FONT--------------------*/
 @font-face{
 	font-family:'Lora';
-	src: url("/assets/font/Lora-VariableFont_wght") format ("ttf");
+	src: url("/assets/font/lora/Lora-VariableFont_wght.ttf") format ("ttf");
 }
 
 @font-face{
 	font-family:'Lora';
-	src: url("/assets/font/Lora-Italic-VariableFont_wght") format ("ttf");
+	src: url("/assets/font/lora/Lora-Italic-VariableFont_wght.ttf") format ("ttf");
 }
 
 
@@ -39,6 +39,21 @@ header, article, footer, section, figure{
 }
 
 /*-------------GENERIC-----------------------*/
+
+body{
+  font-family: 'Helvetica', 'Arial', sans-serif; /*Backup font*/
+  font-family: 'Lora';
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+h3{
+  font-family: 'Helvetica', 'Arial', sans-serif; /*Backup font*/
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 600;
+}
 
 .center{
   margin: 0 auto;
@@ -67,19 +82,8 @@ header, article, footer, section, figure{
   font-size: 1em;
 }
 
-h3{
-  font-family: cursive;
-  font-style: oblique;
-}
-
 .info-container{
   width: 100%;
-}
-
-body{
-  font-family: 'Lora', 'Helvetica', 'Arial', sans-serif;
-  line-height: 1.5em;
-
 }
 
 /*-----------------COLOR--------------------*/
@@ -143,7 +147,7 @@ h3{
   border-bottom-left-radius: 0.2em;
   border-bottom-right-radius: 0.2em;
 
-  height: 3.5em;
+  height: 2.9em;
   position: fixed; 
   z-index: 5;
   width: 100%;
@@ -167,8 +171,8 @@ h3{
 .header a{
   color: #FAFAFA; /*Gray 50*/
   font-size: 1.1em;
-  font-weight:600;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+
   text-decoration: none;
   padding: 0;
 }
@@ -250,7 +254,7 @@ h3{
   }  
 
   .header a{
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .container-fluid{

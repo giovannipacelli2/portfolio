@@ -91,10 +91,10 @@ hr:not([size]) {
 
 /*-----Heal-Fitness-----*/
 
-#second-section h3{
-  font-family: cursive;
-  font-style: oblique;
-}
+/*#second-section h3{
+  font-family: 'Lora';
+  font-style: italic;
+}*/
 
 .fitness-section{
   display: flex;
