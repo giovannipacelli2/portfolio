@@ -62,9 +62,9 @@ section li>p:first-of-type{
 }
 
 
-  .margin-top-1em{
-      margin-top: 1em;
-  }
+.no-margin-top{
+    margin-top:0;
+}
 
   
 
