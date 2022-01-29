@@ -36,6 +36,10 @@ section li>p:first-of-type{
     justify-content: center;
 }
 
+.continue-to-read{
+    text-decoration: underline;
+}
+
 .article-container{
     padding: 1.5em 0;
     width: 70%;
