@@ -42,13 +42,13 @@ section li>p:first-of-type{
 
 .article-container{
     padding: 1.5em 0;
-    width: 70%;
+    width: 98%;
     margin: 0 auto;
 }
 
 .article{
-    background-color: #EEEEEE; /*Gray 200*/
-    border: 1px solid #EEEEEE; /*Gray 200*/;
+    background-color: #eeeeee31; /*Gray 200 transparent*/
+    border: 1px solid #eeeeee31; /*Gray 200 transparent*/;
     border-radius: 0.2em;
     width: 100%;
   
@@ -87,10 +87,10 @@ section li>p:first-of-type{
 
 }
 
-@media only screen and (max-width:576px){
+@media only screen and (min-width:576px)and (max-width:768px){
 
     .article-container{
-        width: 98%;
+        width: 80%;
     }
 
 }
@@ -106,6 +106,8 @@ section li>p:first-of-type{
 
 }
 
-@media only screen and (min-width:768px) and (max-width:992px){
-
+@media only screen and (min-width:992px){
+    .article-container{
+        width: 50%;
+    }
 }
