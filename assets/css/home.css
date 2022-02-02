@@ -219,3 +219,16 @@ hr:not([size]) {
   }
 
 }
+@media only screen and (min-width:992px) and (max-width:1400px){
+  .container-sm{
+    max-width: 990px;
+  }
+
+}
+
+@media only screen and (min-width:1400px){
+  .container-sm{
+    width: 70%;
+  }
+
+}
