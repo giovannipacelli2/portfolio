@@ -35,8 +35,9 @@ hr:not([size]) {
 /*-------------2-SECTION----------------------*/
 
 #second-section{
-  background-color: #EEEEEE; /*Gray 200*/
-  border-radius: 0.2em;
+  background-color: #eeeeee91; /*Gray 200*/
+  /*border-radius: 0.2em;*/
+  border-radius: 1em;
 
   padding: 0.5em;
   margin-bottom: 1.5em;
