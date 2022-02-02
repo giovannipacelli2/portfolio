@@ -14,8 +14,14 @@ hr:not([size]) {
 /*-------------1-SECTION----------------------*/
 
 #my-photo{    
-  margin: 0 0 0 auto;
+  margin: 0;
+  margin-right: auto;
   width: 100%;
+}
+
+#aboutme{
+  margin: 0;
+  margin-left: auto;
 }
 
 .description p{   
