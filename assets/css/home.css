@@ -38,6 +38,9 @@ hr:not([size]) {
 #first-section{
   padding: 0.5em;
 }
+
+/* distance between 1 and 2 section is 1.8em x 2 */
+
 /*-------------2-SECTION----------------------*/
 
 #second-section{
@@ -158,6 +161,14 @@ hr:not([size]) {
 
   .start-to-impact{
     width:80%;
+  }
+
+}
+
+@media only screen and (max-width:768px){
+
+  .mt-smartphone{
+    margin-top: 3.2em;
   }
 
 }
