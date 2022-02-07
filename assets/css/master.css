@@ -47,7 +47,7 @@ body{
   text-rendering: auto;
   font-synthesis: none;
 
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.5em;
 }
 
@@ -56,6 +56,8 @@ h3{
   font-family: 'Lora';
   font-style: italic;
   font-weight: 600;
+
+  font-size: 1.6em;
 }
 
 .center{
@@ -173,7 +175,7 @@ h3{
 
 .header a{
   color: #FAFAFA; /*Gray 50*/
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 600;
 
   text-decoration: none;
@@ -230,7 +232,7 @@ h3{
 
 #torna-su{
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 
@@ -275,11 +277,11 @@ h3{
   /*--------------------------------*/
 
   body{
-    font-size:1.2em;
+    font-size:1.3em;
   }
 
   h3{
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
     
 }
