@@ -37,6 +37,8 @@ hr:not([size]) {
 
 #first-section{
   padding: 0.5em;
+  border-left:3px solid #eeeeeebe; /*Gray 200*/
+  border-right:3px solid #eeeeeebe; /*Gray 200*/
 }
 
 /* distance between 1 and 2 section is 1.8em x 2 */
@@ -44,9 +46,10 @@ hr:not([size]) {
 /*-------------2-SECTION----------------------*/
 
 #second-section{
-  background-color: #eeeeee91; /*Gray 200*/
-  /*border-radius: 0.2em;*/
-  border-radius: 1em;
+  background-color: #eeeeeebe; /*Gray 200*/
+  /*border-radius: 1em;*/
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 
   padding: 0.5em;
   margin-bottom: 1.5em;
