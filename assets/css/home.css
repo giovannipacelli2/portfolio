@@ -102,10 +102,6 @@ hr:not([size]) {
 
 /*-----Heal-Fitness-----*/
 
-/*#second-section h3{
-  font-family: 'Lora';
-  font-style: italic;
-}*/
 
 .fitness-section{
   display: flex;
@@ -172,6 +168,13 @@ hr:not([size]) {
   
   .competence-icon:last-of-type{
     width: 29%;
+  }
+
+  /*-------Curriculum-----*/
+
+  .cv-icon{
+    width: 28%;
+    height: 28%;
   }
 
 }
