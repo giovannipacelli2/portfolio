@@ -53,14 +53,10 @@ hr:not([size]) {
 }
 
 #competence-photos{
+  display: flex;
   margin:0;
   margin-right: auto;
   width: auto;
-}
-
-.competence-icon:last-of-type{
-  padding-bottom: 5px;
-  width: 19%;
 }
 
 /*-------Competence-----*/
@@ -73,6 +69,11 @@ hr:not([size]) {
 .competence-icon{
   width: 20%;
   opacity: 80%;
+}
+
+.competence-icon:last-of-type{
+  padding-bottom: 5px;
+  width: 19%;
 }
 
 /*-------Curriculum-----*/
@@ -159,8 +160,18 @@ hr:not([size]) {
     display: none;
   }
 
+  /*------Competence-----*/
+
   .start-to-impact{
     width:80%;
+  }
+
+  .competence-icon{
+    width: 30%;
+  }
+  
+  .competence-icon:last-of-type{
+    width: 29%;
   }
 
 }
