@@ -37,8 +37,11 @@ hr:not([size]) {
 
 #first-section{
   padding: 0.5em;
-  border-left:3px solid #eeeeeebe; /*Gray 200*/
-  border-right:3px solid #eeeeeebe; /*Gray 200*/
+
+  box-shadow: 0px 8px 10px #E0E0E0; /*Gray 300*/
+
+  border-left:2px solid #E0E0E0; /*Gray 300*/
+  border-right:2px solid #E0E0E0; /*Gray 300*/
 }
 
 /* distance between 1 and 2 section is 1.8em x 2 */
@@ -46,13 +49,20 @@ hr:not([size]) {
 /*-------------2-SECTION----------------------*/
 
 #second-section{
-  background-color: #eeeeeebe; /*Gray 200*/
-  /*border-radius: 1em;*/
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
+  background-color: #F5F5F5; /*Gray 100*/
+
+  box-shadow: 0px 4px 10px #E0E0E0; /*Gray 300*/
+
+  border:2px solid #E0E0E0; /*Gray 300*/
+  border-top:none;
+  border-bottom-width:1px;
+
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
 
   padding: 0.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+  /*margin-bottom: 1.5em;*/
 }
 
 #competence-photos{
@@ -250,12 +260,27 @@ hr:not([size]) {
   .container-sm{
     max-width: 990px;
   }
+  #first-section{
+    padding: 0.5em 2em;
+  }
+
+  #second-section{
+    padding: 0.5em 2em;
+  }
 
 }
 
 @media only screen and (min-width:1400px){
   .container-sm{
     width: 70%;
+  }
+
+  #first-section{
+    padding: 0.5em 2em;
+  }
+
+  #second-section{
+    padding: 0.5em 2em;
   }
 
 }

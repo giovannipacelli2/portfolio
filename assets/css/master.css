@@ -124,9 +124,8 @@ h3{
         /*-------------*/
 
 .text-container-box{
-  border:1px solid #6161617a; /*Gray 700 transparent*/
-  /*background-color: #BDBDBD; Gray 400*/
-  background: linear-gradient(135deg, #E0E0E0, #616161 300%); /*Gray 300 + Gray 700*/
+  background-color: #FAFAFA; /*Gray 50*/
+  /*background: linear-gradient(135deg, #E0E0E0, #616161 300%); Gray 300 + Gray 700*/
 }
 
 .text-container-bar{
