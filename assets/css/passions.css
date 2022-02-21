@@ -47,7 +47,9 @@ section li>p:first-of-type{
 }
 
 .article{
+    background-color: #eeeeee; /*Gray 200 for ie*/
     background-color: #eeeeeebe; /*Gray 200 transparent*/
+    
     border: 1px solid #eeeeeebe; /*Gray 200 transparent*/;
     /*border-radius: 0.2em;*/
     border-radius: 1em;
