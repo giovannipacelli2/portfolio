@@ -106,7 +106,7 @@ h3{
   color: #212121; /*Gray 900*/
 }
 
-        /*----Link-----*/
+        /*----Generic-Link-----*/
 
 .g-link:link, .g-link:visited, .g-link:active{
   color: #212121; /*Gray 900*/
@@ -187,7 +187,6 @@ h3{
 
 .header a:hover, a:focus{
   color: #212121; /*Gray 900*/
-  text-transform: uppercase;
 
   background-color: #FAFAFA; /*Gray 50*/
   border-radius: 0.2em;
