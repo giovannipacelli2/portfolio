@@ -165,9 +165,9 @@ h3{
   display: block;
 }
 
-.header div{
-  justify-content: space-around;
-  margin: 0 auto;
+.header .navbar-nav{
+  justify-content: space-between;
+  /*margin: 0 auto;*/
   width: 100%;
 
 }
@@ -282,6 +282,31 @@ h3{
     font-size: 1.5em;
   }
     
+}
+
+@media only screen and (min-width:576px){
+  /*--------------NAVBAR------------*/
+
+  .header .navbar-nav{
+
+    width: 60%;
+  
+  }
+  
+  .links{
+    width: 80%;
+    margin: 0 auto;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .links-container{
+    width: 100%;
+    justify-content: flex-end;
+    flex-grow: 0 !important;
+  }
+
 }
 
 
