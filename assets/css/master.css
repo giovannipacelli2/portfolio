@@ -30,8 +30,12 @@ header, article, footer, section, figure{
 
 /*----------------DEGUB----------------*/
 
-.bordo{
+.bordo-b{
   border: 1px solid black;
+}
+
+.bordo-w{
+  border: 1px solid white;
 }
 
 .bordo-r{
