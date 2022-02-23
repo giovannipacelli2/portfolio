@@ -192,10 +192,14 @@ h3{
   color:#FAFAFA; /*Gray 50*/
 }
 
+.navbar-nav>a{
+  font-family:'Lobster';
+  font-style: normal;
+  font-weight: 400;
+
+}
+
 .header a{
-
-  font-family: 'Lobster';
-
   color: #FAFAFA; /*Gray 50*/
   font-size: 1.1em;
   font-weight: 600;
