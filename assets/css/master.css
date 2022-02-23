@@ -180,7 +180,7 @@ h3{
   align-items: center;
 
   width: auto;
-  padding: 8px;
+  margin-left: 16px;
 }
 .logo img{
   width: 130px;
@@ -306,6 +306,10 @@ h3{
 
     width: 60%;
   
+  }
+
+  .logo{
+    margin: auto;
   }
   
   .links{
