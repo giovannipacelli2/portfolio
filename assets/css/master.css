@@ -17,17 +17,17 @@ header, article, footer, section, figure{
 /*-------------------FONT--------------------*/
 @font-face{
 	font-family:'Lora';
-	src: url("assets/font/lora/Lora-VariableFont_wght.ttf") format ("ttf");
+	src: url("../../assets/font/lora/Lora-VariableFont_wght.ttf") format ("ttf");
 }
 
 @font-face{
 	font-family:'Lora';
-	src: url("assets/font/lora/Lora-Italic-VariableFont_wght.ttf") format ("ttf");
+	src: url("../../assets/font/lora/Lora-Italic-VariableFont_wght.ttf") format ("ttf");
 }
 
 @font-face{
 	font-family:'Lobster';
-	src: url("assets/font/Lobster/Lobster-Regular.ttf") format ("ttf");
+	src: url("../../assets/font/Lobster/Lobster-Regular.ttf") format ("ttf");
 }
 
 
