@@ -178,11 +178,19 @@ h3{
   justify-content: center;
   align-items: center;
 
-  width: auto;
+  width: 200px;
   margin-left: 16px;
 }
 .logo img{
   width: 130px;
+}
+
+.logo img:hover{
+  width: 140px;
+}
+
+.logo img:focus{
+  width: 140px;
 }
 
 #logo-color{  /*Sovrascrittura colore con utilizzo di maggiore specificità*/
