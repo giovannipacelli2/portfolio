@@ -291,6 +291,10 @@ h3{
     margin-right: 1rem;
   }  
 
+  .logo{
+    width: auto;
+  }
+
   .navbar-nav a{
     padding: 0.5rem 1rem;
   }
