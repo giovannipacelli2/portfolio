@@ -271,7 +271,7 @@ h3{
 
 }
 
-@media only screen and (max-width:576px){
+@media only screen and (max-width:575.9px){
   /*--------------NAVBAR------------*/
   
   .navbar-nav{
@@ -306,10 +306,12 @@ h3{
 @media only screen and (min-width:576px){
   /*--------------NAVBAR------------*/
 
-  .header .navbar-nav{
+  .header a{
+    font-size: 1.2em;
+  }
 
-    width: 60%;
-  
+  .header .navbar-nav{
+    width: 70%;   /*Gestione spazio fra i links*/  
   }
 
   .logo{
@@ -336,6 +338,11 @@ h3{
 /*--------------Desktop-Media-Query------------*/
 
 @media only screen and (min-width:768px){
+    /*--------------NAVBAR------------*/
+
+    .header .navbar-nav{
+      width: 60%;   /*Gestione spazio fra i links*/  
+    }
 
 /*-------------GENERIC-----------------------*/
 
