@@ -156,15 +156,15 @@ h3{
 
 
 .header{
-  border-bottom-left-radius: 0.2em;
-  border-bottom-right-radius: 0.2em;
+  /*border-bottom-left-radius: 0.2em;*/
+  /*border-bottom-right-radius: 0.2em;*/
 
   height: 2.9em;
   position: fixed; 
   z-index: 5;
   width: 100%;
 
-  clip-path: ellipse(100% 3.1em at 50% -5%);
+  /*clip-path: ellipse(100% 3.1em at 50% -5%);*/
 }
 /*----Navbar-Home----*/
 
@@ -242,7 +242,8 @@ h3{
   display: flex;
   align-items: center;
 
-  clip-path: ellipse(100% 12em at 50% 90%);
+  margin-top: 30px;
+  clip-path: ellipse(100% 11em at 50% 80%);
 }
 
 .footer h3{
