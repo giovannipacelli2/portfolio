@@ -163,6 +163,8 @@ h3{
   position: fixed; 
   z-index: 5;
   width: 100%;
+
+  clip-path: ellipse(100% 3.1em at 50% -5%);
 }
 /*----Navbar-Home----*/
 
@@ -239,6 +241,8 @@ h3{
   color: #212121; /*Gray 900*/
   display: flex;
   align-items: center;
+
+  clip-path: ellipse(100% 12em at 50% 90%);
 }
 
 .footer h3{
