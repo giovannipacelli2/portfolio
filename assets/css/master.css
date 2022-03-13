@@ -281,7 +281,9 @@ h3{
 
 @media only screen and (max-width:465px){
 
-
+  .footer{
+    clip-path: ellipse(100% 7em at 50% 7%);
+  }
 }
 
 @media only screen and (max-width:575.9px){
@@ -316,6 +318,12 @@ h3{
 
   h3{
     font-size: 1.5em;
+  }
+
+  /*-------------FOOTER-------------*/
+
+  .footer{
+    clip-path: ellipse(100% 8em at 50% 60%);
   }
     
 }
