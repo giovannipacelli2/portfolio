@@ -156,13 +156,15 @@ h3{
 
 
 .header{
-  border-bottom-left-radius: 0.2em;
-  border-bottom-right-radius: 0.2em;
+  /*border-bottom-left-radius: 0.2em;*/
+  /*border-bottom-right-radius: 0.2em;*/
 
   height: 2.9em;
   position: fixed; 
   z-index: 5;
   width: 100%;
+
+  /*clip-path: ellipse(100% 3.1em at 50% -5%);*/
 }
 /*----Navbar-Home----*/
 
@@ -239,6 +241,8 @@ h3{
   color: #212121; /*Gray 900*/
   display: flex;
   align-items: center;
+
+  clip-path: ellipse(100% 11em at 50% 80%);
 }
 
 .footer h3{
@@ -276,7 +280,9 @@ h3{
 
 @media only screen and (max-width:465px){
 
-
+  .footer{
+    clip-path: ellipse(100% 7em at 50% 7%);
+  }
 }
 
 @media only screen and (max-width:575.9px){
@@ -311,6 +317,12 @@ h3{
 
   h3{
     font-size: 1.5em;
+  }
+
+  /*-------------FOOTER-------------*/
+
+  .footer{
+    clip-path: ellipse(100% 8em at 50% 60%);
   }
     
 }

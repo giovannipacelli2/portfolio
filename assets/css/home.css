@@ -132,6 +132,12 @@ hr:not([size]) {
   margin-right: 1%;
 }
 
+/*-------FOOTER--------*/
+
+.footer{
+  margin-top: 1.55em;
+}
+
 
 /*-----------Smartphone-Ottimization----------*/
 
