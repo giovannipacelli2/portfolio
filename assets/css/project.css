@@ -37,6 +37,9 @@
 .img-container img {
     border-radius: 1em;
 }
+#img-port {
+    border-radius: 0.2em;
+}
 /*-------------------COLOR---------------------*/
 
 #project-container {
