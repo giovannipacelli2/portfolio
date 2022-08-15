@@ -4,6 +4,13 @@
     margin-bottom: 1.55em;
 }
 
+#project-container a:link, 
+#project-container a:visited, 
+#project-container a:focus, 
+#project-container a:hover {
+    color: black;
+}
+
 #project-container {
     margin: 0 auto;
     padding: 0.5em;
@@ -88,6 +95,10 @@
 
     .to-left {
         align-self: flex-start;
+    }
+
+    #img-port {
+        width: 70%;
     }
 }
 
