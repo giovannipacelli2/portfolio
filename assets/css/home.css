@@ -184,16 +184,16 @@ hr:not([size]) {
   /*------Competence-----*/
 
   .start-to-impact{
-    width:80%;
+    width:90%;
   }
 
   .competence-icon{
-    width: 40%;
+    width: 35%;
     margin-bottom: 5px;
   }
 
   #competence-photos{
-    width: 70%;
+    width: 90%;
   }
 
   /*-------Curriculum-----*/
@@ -212,7 +212,7 @@ hr:not([size]) {
   }
 
   .competence-icon{
-    width: 40%;
+    width: 35%;
   }
 }
 
