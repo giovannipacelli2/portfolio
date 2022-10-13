@@ -68,10 +68,10 @@ hr:not([size]) {
 
 #competence-photos{
   display: flex;
-  margin:0;
-  margin-right: auto;
+  margin:0 auto;
   width: auto;
 
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -143,6 +143,7 @@ hr:not([size]) {
 
 /*-----------Smartphone-Ottimization----------*/
 
+
 @media only screen and (max-width:576px){
 
   #competence-photos{
@@ -152,6 +153,7 @@ hr:not([size]) {
   .start-to-impact{
     width:250px;
   }
+  
     
 }
 
@@ -187,10 +189,11 @@ hr:not([size]) {
 
   .competence-icon{
     width: 30%;
+    margin-bottom: 5px;
   }
-  
-  .competence-icon:last-of-type{
-    width: 29%;
+
+  #competence-photos{
+    justify-content: flex-start;
   }
 
   /*-------Curriculum-----*/
@@ -200,6 +203,16 @@ hr:not([size]) {
     height: 28%;
   }
 
+}
+@media only screen and (max-width:320px){
+
+  #competence-photos{
+    justify-content: center;
+  }
+
+  .competence-icon{
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width:768px){
