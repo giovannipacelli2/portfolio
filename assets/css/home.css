@@ -87,8 +87,8 @@ hr:not([size]) {
 }
 
 .competence-icon:last-of-type{
-  padding-bottom: 5px;
-  width: 19%;
+  /*padding-bottom: 5px;
+  width: 19%;*/
 }
 
 /*-------Curriculum-----*/
