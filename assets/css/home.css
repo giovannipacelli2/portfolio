@@ -71,6 +71,8 @@ hr:not([size]) {
   margin:0;
   margin-right: auto;
   width: auto;
+
+  flex-wrap: wrap;
 }
 
 /*-------Competence-----*/
