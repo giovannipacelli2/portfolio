@@ -129,6 +129,20 @@ h3{
   font-style: normal;
 }
 
+        /*----Special-Link-----*/
+
+.special-links, 
+.special-links:visited, 
+.special-links:hover, 
+.special-links:link {
+    color:black !important;
+    font-weight: 600;
+}
+
+.special-links:focus {
+    color:rgb(207, 1, 1) !important;
+}
+
         /*-------------*/
 
 .text-container-box{
