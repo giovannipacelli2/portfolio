@@ -169,7 +169,7 @@ hr:not([size]) {
     display: none;
   }
 
-  .description:hover #continue{
+  /* .description:hover #continue{
     display: inline;
   }
   .description:focus #continue{
@@ -181,7 +181,7 @@ hr:not([size]) {
   }
   .description:focus .other{
     display: none;
-  }
+  } */
 
   /*------Competence-----*/
 
