@@ -11,6 +11,14 @@ hr:not([size]) {
   height: 1.5px;    /*Hack bootstrap :P */
 }
 
+.d-none {
+  display: none;
+}
+
+.d-inline {
+  display: inline;
+}
+
 /*-------------1-SECTION----------------------*/
 
 #my-photo{    
@@ -33,6 +41,8 @@ hr:not([size]) {
   color: #212121; /*Gray 900*/
   font-weight: 600;
   text-decoration: underline;
+
+  cursor: pointer;
 }
 
 #first-section{
@@ -155,12 +165,9 @@ hr:not([size]) {
   .start-to-impact{
     width:250px;
   }
+
+  /*-------See-other-----*/
   
-    
-}
-
-@media only screen and (max-width:465px){
-
   .other{
     display: inline;
   }
@@ -168,20 +175,7 @@ hr:not([size]) {
   #continue{
     display: none;
   }
-
-  /* .description:hover #continue{
-    display: inline;
-  }
-  .description:focus #continue{
-    display: inline;
-  }
-
-  .description:hover .other{
-    display: none;
-  }
-  .description:focus .other{
-    display: none;
-  } */
+    
 
   /*------Competence-----*/
 

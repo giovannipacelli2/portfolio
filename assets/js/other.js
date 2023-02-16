@@ -16,14 +16,14 @@ function check(e) {
 
         let show = aboutMeSection.querySelector("#continue");
 
-        other.style.display = "none";
-        show.style.display = "inline";
+        other.classList.add("d-none");
+        show.classList.add("d-inline");
 
         visible = true;
 
         this.onblur = ()=> {
-            other.style.display = "inline";
-            show.style.display = "none";
+            other.classList.remove("d-none");
+        show.classList.remove("d-inline");
             
             this.onblur = null;
         }
