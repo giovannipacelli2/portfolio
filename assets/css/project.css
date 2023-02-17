@@ -39,14 +39,18 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    --totalHeight: 2em;
 }
 
 .header-projects img {
-    width: 50px;
+    margin-right: 0.5em;
+    width: var(--totalHeight);
 }
 
 .header-projects h3 {
     margin: 0;
+    font-size: calc(var(--totalHeight));
 }
 
 .img-container {
@@ -109,6 +113,10 @@
 
     #project-container {
         padding: 1.2em;
+    }
+
+    .header-projects h3 {
+        font-size: calc(var(--totalHeight) - 0.5em);
     }
 
     .project {
