@@ -21,7 +21,7 @@
 
 .project {
     margin-top: 0.3em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     padding: 0.5em;
 
     display: flex;
@@ -33,6 +33,20 @@
 
 .project:last-of-type {
     margin-bottom: 1.2em;
+}
+
+.header-projects {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-projects img {
+    width: 50px;
+}
+
+.header-projects h3 {
+    margin: 0;
 }
 
 .img-container {
