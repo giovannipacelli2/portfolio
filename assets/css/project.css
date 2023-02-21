@@ -35,6 +35,21 @@
     margin-bottom: 1.2em;
 }
 
+.project-links {
+
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.project-links h3 {
+    font-size: 1.2em;
+}
+
 .header-projects {
     display: flex;
     justify-content: flex-start;
@@ -85,7 +100,7 @@
 
 
 
-/*-----------Smartphone-Ottimization----------*/
+/*-----------Smartphone-Optimization----------*/
 
 @media only screen and (max-width:465px) {
 
@@ -96,6 +111,10 @@
 
     #project-container h3{
       font-size: 1.2em;
+    }
+
+    .project-links {
+        width: 90%;
     }
   }
 
