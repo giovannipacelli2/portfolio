@@ -48,6 +48,11 @@
 
 .project-links h3 {
     font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+.project-links h3:last-of-type {
+    margin-right: 0px;
 }
 
 .header-projects {
