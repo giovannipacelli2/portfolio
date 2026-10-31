@@ -1,6 +1,6 @@
 // Single data source of the site: edit here and the UI updates.
 
-import type { ComponentType } from 'react'
+import { lazy, type ComponentType } from 'react'
 // import { lazy } from 'react'
 
 export type SkillCategory = 'frontend' | 'backend' | 'database' | 'devops'
@@ -27,6 +27,7 @@ export interface ProjectDetails {
 
 export interface Project {
   /** Used in the URL: /projects/<slug> */
+  hidden?: boolean,
   slug: string
   title: string
   description: string
@@ -72,6 +73,52 @@ export const skills: Skill[] = [
 ]
 
 export const projects: Project[] = [
+  {
+    hidden:false,
+    slug: 'aureas-landing',
+    title: 'Auréas (landing page)',
+    description:
+      'Landing page in produzione per Auréas: sito React con form di richiesta contatti protetto da Turnstile, client API generato da OpenAPI e monitoraggio degli errori.',
+    stack: ['React', 'TypeScript', 'Vite', 'Material UI', 'Sentry'],
+    demo: 'https://aureas-landing-preview.netlify.app',
+    featured: true,
+    details: {
+      overview:
+        'Sito vetrina di Auréas, sviluppato come single page application e pubblicato. Il codice è privato, ma il sito è online. Il frontend comunica con il backend Laravel tramite un client TypeScript generato dalla specifica OpenAPI, e il form di contatto è protetto da Cloudflare Turnstile.',
+      features: [
+        'React 19 e TypeScript, con build e tipi verificati prima di ogni rilascio',
+        'Interfaccia con Material UI e componenti Radix, animazioni con Motion',
+        'Client API generato automaticamente dalla specifica OpenAPI del backend',
+        'Form di richiesta contatti con validazione (React Hook Form) e controllo anti-bot Turnstile',
+        'Richieste firmate lato server, nessun segreto nel bundle',
+        'Monitoraggio degli errori con Sentry e consenso ai cookie',
+        'Deploy automatico con GitHub Actions e anteprima su ambiente di test',
+      ],
+    },
+  },
+  {
+    slug: 'aureas-gestionale',
+    title: 'Auréas (piattaforma gestionale)',
+    description:
+      'Gestionale per professionisti del benessere: dai contatti del sito ai pazienti, dalle visite ai piani alimentari. Pannello Angular e API Laravel.',
+    stack: ['Angular', 'TypeScript', 'Laravel', 'PHP', 'MySQL', 'OpenAPI'],
+    featured: true,
+    details: {
+      overview:
+        'Piattaforma interna di Auréas, pensata per nutrizionisti, personal trainer, osteopati, istruttori di pilates e massoterapisti. Raccoglie i contatti arrivati dal sito, li trasforma in pazienti e accompagna il lavoro del professionista fino alle visite e ai piani alimentari. Il codice è privato: qui sotto trovi il percorso con le schermate.',
+      features: [
+        'Pannello Angular 21 con componenti standalone, Signals e UI ng-zorro con Tailwind',
+        'API Laravel 12 con autenticazione JWT (token di accesso e di refresh) e ruoli con permessi',
+        'Contratto OpenAPI unico: il client Angular e i DTO PHP sono generati dalla stessa specifica',
+        'Webhook per i lead, controllo anti-duplicati e rate limiting',
+        'Questionari versionati per professione, con form costruiti dinamicamente dal modello',
+        'Piani alimentari con alimenti, ricette e template di giornata, anche stampabili',
+        'Visibilità dei dati per account: ogni professionista vede solo i propri pazienti',
+        'Suite di test automatici sul backend',
+      ],
+      Section: lazy(() => import('../projects/AureasFlow')),
+    },
+  },
   {
     slug: 'teamflow-fe',
     title: 'TeamFlow (frontend)',

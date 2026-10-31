@@ -14,7 +14,7 @@ export function Projects() {
     <section id="projects" className="mx-auto max-w-5xl px-4 py-24">
       <SectionTitle index="02 // projects" title="Progetti" />
       <div className="grid gap-6 md:grid-cols-2">
-        {projects.map((p, i) => (
+        {projects.filter(p => !p.hidden).map((p, i) => (
           <Reveal key={p.title} delay={(i % 2) * 0.1} className="h-full">
             <article
               tabIndex={0}
