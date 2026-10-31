@@ -52,24 +52,33 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
-    title: 'Progetto di esempio 1',
-    description: 'Descrivi in una riga il problema che risolve e il tuo ruolo.',
-    stack: ['React', 'Node.js', 'PostgreSQL'],
-    repo: 'https://github.com/',
-    demo: 'https://example.com',
+    title: 'TeamFlow (frontend)',
+    description:
+      'Web app per la gestione dei task: account, modifica del profilo, creazione e modifica dei task e visualizzazione di quelli condivisi da altri utenti.',
+    stack: ['React', 'TypeScript', 'SCSS'],
+    repo: 'https://github.com/giovannipacelli2/teamflow_fe',
     featured: true,
   },
   {
-    title: 'Progetto di esempio 2',
-    description: 'Un secondo progetto: cosa fa e quale risultato ha ottenuto.',
-    stack: ['PHP', 'MySQL', 'JavaScript'],
-    repo: 'https://github.com/',
+    title: 'TeamFlow API (backend)',
+    description:
+      'API RESTful con CRUD per utenti e task, validazione delle richieste, policy di accesso e documentazione Swagger.',
+    stack: ['Laravel', 'PHP', 'PostgreSQL', 'Swagger'],
+    repo: 'https://github.com/giovannipacelli2/teamflow_be',
     featured: true,
   },
   {
-    title: 'Progetto di esempio 3',
-    description: 'Un terzo progetto, magari open source o un esperimento.',
-    stack: ['TypeScript', 'Docker'],
-    repo: 'https://github.com/',
+    title: 'PhpGateKeeperProxy',
+    description:
+      'Micro-script PHP senza dipendenze che firma con HMAC le richieste verso il backend, tenendo il segreto lato server, e valida un token Cloudflare Turnstile prima di inoltrarle.',
+    stack: ['PHP', 'Docker', 'Turnstile'],
+    repo: 'https://github.com/giovannipacelli2/PhpGateKeeperProxy',
+  },
+  {
+    title: 'PhpRedirectorPlus',
+    description:
+      'Redirect tracker in PHP puro, adatto a WordPress: registra la richiesta e la rimanda alla destinazione, estendibile con plugin interni o codice personalizzato.',
+    stack: ['PHP', 'Docker'],
+    repo: 'https://github.com/giovannipacelli2/PhpRedirectorPlus',
   },
 ]

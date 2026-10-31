@@ -11,7 +11,7 @@ export interface CodeSnippet {
 export const codeSnippets: CodeSnippet[] = [
   { lang: 'javascript', code: 'const sum = (a, b) => a + b;\nconsole.log(sum(2, 3));' },
   { lang: 'javascript', code: 'fetch(url)\n  .then(r => r.json())\n  .then(console.log);' },
-  { lang: 'javascript', code: 'items.map(i => i.id)\n     .filter(Boolean);' },
+  { lang: 'javascript', code: 'items.map(i => i.id)\n     .filter((elem)=>{elem!==null});' },
   { lang: 'javascript', code: 'async function load() {\n  return await api.get();\n}' },
   { lang: 'javascript', code: 'export default {\n  name: "dev",\n};' },
   { lang: 'php', code: '<?php\necho "Hello, world";' },
