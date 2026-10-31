@@ -1,0 +1,20 @@
+/* Variabili di tema: unica fonte di verità per colori, font e ombre.
+   Con Tailwind v4 ogni --color-* diventa una utility (bg-bg, text-accent, ...). */
+@theme {
+  --color-bg: #050805;
+  --color-surface: #0b120b;
+  --color-surface-2: #101a10;
+  --color-border: #1a2a1a;
+  --color-text: #e6f2e6;
+  --color-muted: #7f9a7f;
+  --color-accent: #2afe14;
+  --color-accent-dim: #1aa80d;
+
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+
+  --shadow-glow: 0 0 24px rgb(42 254 20 / 0.25);
+  --shadow-glow-sm: 0 0 10px rgb(42 254 20 / 0.45);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
