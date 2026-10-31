@@ -52,3 +52,21 @@ export function LinkedinIcon({ className }: IconProps) {
     </svg>
   )
 }
+
+export function ArrowRightIcon({ className }: IconProps) {
+  return (
+    <svg {...base} {...stroke} className={className}>
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </svg>
+  )
+}
+
+export function ArrowLeftIcon({ className }: IconProps) {
+  return (
+    <svg {...base} {...stroke} className={className}>
+      <path d="m12 19-7-7 7-7" />
+      <path d="M19 12H5" />
+    </svg>
+  )
+}

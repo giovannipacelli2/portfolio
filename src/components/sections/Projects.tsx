@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import { usePortfolio } from '../../hooks/usePortfolio'
 import { Reveal } from '../ui/Reveal'
 import { SectionTitle } from '../ui/SectionTitle'
-import { CodeIcon, DemoIcon } from '../ui/SocialIcons'
+import { ArrowRightIcon, CodeIcon, DemoIcon } from '../ui/SocialIcons'
 
 const linkClass =
   'inline-flex min-h-11 cursor-pointer items-center gap-2 font-mono text-sm text-accent underline-offset-4 transition-colors duration-200 hover:underline'
@@ -43,6 +44,12 @@ export function Projects() {
                     <DemoIcon className="h-4 w-4" />
                     Demo
                   </a>
+                )}
+                {p.details && (
+                  <Link to={`/projects/${p.slug}`} className={`${linkClass} ml-auto font-bold`}>
+                    More
+                    <ArrowRightIcon className="h-4 w-4" />
+                  </Link>
                 )}
               </div>
             </article>

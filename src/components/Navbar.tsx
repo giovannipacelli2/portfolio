@@ -1,10 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const links = [
-  { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Progetti' },
-  { href: '#contact', label: 'Contatti' },
+  { href: '/#skills', label: 'Skills' },
+  { href: '/#projects', label: 'Progetti' },
+  { href: '/#contact', label: 'Contatti' },
 ]
 
 const linkClass =
@@ -26,17 +27,17 @@ export function Navbar({ name }: { name: string }) {
         aria-label="Principale"
         className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4"
       >
-        <a href="#top" className="font-mono text-sm font-bold text-accent">
+        <Link to="/#top" className="font-mono text-sm font-bold text-accent">
           &gt; {name.split(' ')[0].toLowerCase()}_
-        </a>
+        </Link>
 
         {/* From sm up: inline links */}
         <ul className="hidden gap-1 sm:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className={linkClass}>
+              <Link to={l.href} className={linkClass}>
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -77,9 +78,9 @@ export function Navbar({ name }: { name: string }) {
           >
             {links.map((l) => (
               <li key={l.href}>
-                <a href={l.href} onClick={() => setOpen(false)} className={`${linkClass} w-full`}>
+                <Link to={l.href} onClick={() => setOpen(false)} className={`${linkClass} w-full`}>
                   {l.label}
-                </a>
+                </Link>
               </li>
             ))}
           </motion.ul>
