@@ -22,10 +22,10 @@ export const profile = {
   name: 'Giovanni Pacelli',
   role: 'Sviluppatore Fullstack',
   tagline: 'Costruisco applicazioni web dal database all\'interfaccia.',
-  email: 'giovanni.pacelli@workpipe.it',
+  email: 'giovanni.pacelli.dev@gmail.com',
   links: {
-    github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/',
+    github: 'https://github.com/giovannipacelli2',
+    linkedin: 'https://www.linkedin.com/in/giovanni-pacelli-537398147',
   },
 }
 
@@ -37,15 +37,16 @@ export const categoryLabels: Record<SkillCategory, string> = {
 }
 
 export const skills: Skill[] = [
-  { name: 'React', category: 'frontend', level: 5 },
-  { name: 'TypeScript', category: 'frontend', level: 4 },
-  { name: 'Tailwind CSS', category: 'frontend', level: 4 },
-  { name: 'Node.js', category: 'backend', level: 4 },
+  { name: 'React', category: 'frontend', level: 3 },
+  { name: 'TypeScript', category: 'frontend', level: 3 },
+  { name: 'Tailwind CSS', category: 'frontend', level: 3 },
+  { name: 'Laravel', category: 'backend', level: 5 },
   { name: 'PHP', category: 'backend', level: 4 },
-  { name: 'REST API', category: 'backend', level: 4 },
+  { name: 'REST API', category: 'backend', level: 5 },
   { name: 'MySQL', category: 'database', level: 4 },
-  { name: 'PostgreSQL', category: 'database', level: 3 },
+  { name: 'PostgreSQL', category: 'database', level: 4 },
   { name: 'Git', category: 'devops', level: 4 },
+  { name: 'GitHub Actions', category: 'devops', level: 3 },
   { name: 'Docker', category: 'devops', level: 3 },
 ]
 

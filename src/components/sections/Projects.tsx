@@ -14,7 +14,7 @@ export function Projects() {
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((p, i) => (
           <Reveal key={p.title} delay={(i % 2) * 0.1} className="h-full">
-            <article className="flex h-full flex-col rounded-lg border border-border bg-surface p-6 transition-all duration-200 hover:border-accent/50 hover:shadow-glow">
+            <article className="flex h-full flex-col rounded-lg border border-border bg-surface p-6 transition-all duration-200 hover:border-accent/50 hover:shadow-glow hover:cursor-pointer">
               <h3 className="font-mono text-xl font-bold">{p.title}</h3>
               <p className="mt-3 flex-1 text-muted">{p.description}</p>
               <ul className="mt-4 flex flex-wrap gap-2">
