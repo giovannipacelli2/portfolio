@@ -28,6 +28,7 @@ export interface ProjectDetails {
 export interface Project {
   /** Used in the URL: /projects/<slug> */
   hidden?: boolean,
+  isTop?: boolean,
   slug: string
   title: string
   description: string
@@ -75,6 +76,7 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     hidden:false,
+    isTop:true,
     slug: 'aureas-landing',
     title: 'Auréas (landing page)',
     description:
@@ -97,6 +99,8 @@ export const projects: Project[] = [
     },
   },
   {
+    hidden:false,
+    isTop:true,
     slug: 'aureas-gestionale',
     title: 'Auréas (piattaforma gestionale)',
     description:

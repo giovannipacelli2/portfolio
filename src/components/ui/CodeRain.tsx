@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 import { codeSnippets } from '../../data/codeSnippets'
 
 interface Drop {
+  /** A few drops use the shock color instead of the accent */
+  shock: boolean
   lines: string[]
   x: number
   y: number
@@ -17,6 +19,7 @@ const pick = <T,>(arr: T[]) => arr[Math.floor(Math.random() * arr.length)]
 function createDrop(width: number, height: number, initial: boolean): Drop {
   const lines = pick(codeSnippets).code.split('\n')
   return {
+    shock: Math.random() < 0.1,
     lines,
     x: Math.random() * width,
     // On start the blocks are spread over the full height, then they respawn from the top.
@@ -38,6 +41,7 @@ export function CodeRain({ density = 0.00004 }: { density?: number }) {
     // Color and font come from the theme (theme.css), they are not duplicated here.
     const css = getComputedStyle(document.documentElement)
     const color = css.getPropertyValue('--color-accent').trim()
+    const shockColor = css.getPropertyValue('--color-shock').trim()
     const fontFamily = css.getPropertyValue('--font-mono').trim()
 
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -63,8 +67,8 @@ export function CodeRain({ density = 0.00004 }: { density?: number }) {
       ctx.clearRect(0, 0, width, height)
       ctx.font = `${FONT_SIZE}px ${fontFamily}`
       ctx.textBaseline = 'top'
-      ctx.fillStyle = color
       for (const d of drops) {
+        ctx.fillStyle = d.shock ? shockColor : color
         d.y += d.speed * dt
         if (d.y > height) Object.assign(d, createDrop(width, height, false))
         ctx.globalAlpha = d.alpha
