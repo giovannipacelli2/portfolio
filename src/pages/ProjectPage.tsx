@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { Reveal } from '../components/ui/Reveal'
 import { ArrowLeftIcon, CodeIcon, DemoIcon } from '../components/ui/SocialIcons'
@@ -14,6 +15,7 @@ export default function ProjectPage() {
   if (!project?.details) return <Navigate to="/#projects" replace />
 
   const { title, stack, repo, demo, details } = project
+  const { Section } = details
 
   return (
     <article className="mx-auto max-w-3xl px-4 pb-24 pt-28">
@@ -57,6 +59,14 @@ export default function ProjectPage() {
           ))}
         </ul>
       </Reveal>
+
+      {Section && (
+        <Reveal className="mt-12">
+          <Suspense fallback={<p className="font-mono text-sm text-muted">Caricamento…</p>}>
+            <Section />
+          </Suspense>
+        </Reveal>
+      )}
 
       {(repo || demo) && (
         <Reveal className="mt-12 flex flex-wrap gap-4">

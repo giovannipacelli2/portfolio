@@ -1,5 +1,8 @@
 // Single data source of the site: edit here and the UI updates.
 
+import type { ComponentType } from 'react'
+// import { lazy } from 'react'
+
 export type SkillCategory = 'frontend' | 'backend' | 'database' | 'devops'
 
 export interface Skill {
@@ -14,6 +17,12 @@ export interface ProjectDetails {
   overview: string
   /** Bullet list of highlights (features, architecture, results...) */
   features: string[]
+  /**
+   * Optional React component rendered on the project page, below the description.
+   * Keep it lazy so each one is code-split and only loaded on its own page:
+   *   Section: lazy(() => import('../projects/MyProject'))
+   */
+  Section?: ComponentType
 }
 
 export interface Project {
@@ -80,6 +89,7 @@ export const projects: Project[] = [
         'Visualizzazione dei task condivisi da altri utenti',
         'Client API generato dal file Swagger del backend',
       ],
+      // Section: lazy(() => import('../projects/TeamflowArchitecture')),
     },
   },
   {
