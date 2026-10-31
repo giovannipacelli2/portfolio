@@ -1,10 +1,13 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// Served from https://<user>.github.io/portfolio/ on GitHub Pages.
-// Use '/' instead when moving to a custom domain or a <user>.github.io repo.
-export default defineConfig({
-  base: '/portfolio/',
-  plugins: [react(), tailwindcss()],
+export default defineConfig(({ mode }) => {
+  // VITE_BASE comes from .env locally and from the workflow env in CI.
+  const env = loadEnv(mode, '.')
+
+  return {
+    base: env.VITE_BASE || '/',
+    plugins: [react(), tailwindcss()],
+  }
 })
