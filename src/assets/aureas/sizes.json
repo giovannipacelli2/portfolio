@@ -1,0 +1,30 @@
+{
+  "lead": {
+    "width": 1298,
+    "height": 778
+  },
+  "patient-detail-1": {
+    "width": 1295,
+    "height": 882
+  },
+  "patient-detail-2": {
+    "width": 1213,
+    "height": 917
+  },
+  "patient": {
+    "width": 1298,
+    "height": 795
+  },
+  "plan": {
+    "width": 1086,
+    "height": 923
+  },
+  "recap": {
+    "width": 1213,
+    "height": 838
+  },
+  "visit": {
+    "width": 1088,
+    "height": 884
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="#050805" stroke="#1a2a1a" stroke-width="2"/>
+  <!-- ">G" in JetBrains Mono Bold (same font as the site), converted to outlines -->
+  <g fill="#2afe14" transform="translate(5.7 47.84) scale(0.0434 -0.0434)">
+    <!-- ">" nudged down from the baseline of the G -->
+    <path transform="translate(0 -50)" d="M76 56V171L366 305Q386 314 405.5 320.5Q425 327 436 329Q425 331 405 336.5Q385 342 366 351L76 486V603L524 392V267Z"/>
+    <path transform="translate(600 0)" d="M304 -10Q234 -10 181.5 16.5Q129 43 100.5 91.5Q72 140 72 206V524Q72 591 100.5 639Q129 687 181.5 713.5Q234 740 304 740Q375 740 426.5 713.5Q478 687 507 639Q536 591 536 524H410Q410 576 382.5 603Q355 630 304 630Q253 630 225 603Q197 576 197 525V206Q197 155 225 127Q253 99 304 99Q355 99 382.5 127Q410 155 410 206V280H286V388H536V206Q536 140 507 91.5Q478 43 426.5 16.5Q375 -10 304 -10Z"/>
+  </g>
+</svg>
