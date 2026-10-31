@@ -23,9 +23,9 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-bg" />
 
       <div className="relative mx-auto w-full max-w-5xl px-4 pt-14">
-        <Reveal>
+        {/* <Reveal>
           <p className="font-mono text-sm text-accent">$ whoami</p>
-        </Reveal>
+        </Reveal> */}
         <Reveal delay={0.1}>
           <h1 className="mt-3 font-mono text-4xl font-bold text-glow sm:text-6xl">
             {profile.name}

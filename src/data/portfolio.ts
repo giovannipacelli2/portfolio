@@ -20,7 +20,7 @@ export interface Project {
 
 export const profile = {
   name: 'Giovanni Pacelli',
-  role: 'Sviluppatore Fullstack',
+  role: 'Fullstack Developer',
   tagline: 'Costruisco applicazioni web dal database all\'interfaccia.',
   email: 'giovanni.pacelli.dev@gmail.com',
   links: {

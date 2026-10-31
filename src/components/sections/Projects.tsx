@@ -1,9 +1,10 @@
 import { usePortfolio } from '../../hooks/usePortfolio'
 import { Reveal } from '../ui/Reveal'
 import { SectionTitle } from '../ui/SectionTitle'
+import { CodeIcon, DemoIcon } from '../ui/SocialIcons'
 
 const linkClass =
-  'inline-flex min-h-11 cursor-pointer items-center font-mono text-sm text-accent underline-offset-4 transition-colors duration-200 hover:underline'
+  'inline-flex min-h-11 cursor-pointer items-center gap-2 font-mono text-sm text-accent underline-offset-4 transition-colors duration-200 hover:underline'
 
 export function Projects() {
   const { projects } = usePortfolio()
@@ -33,12 +34,14 @@ export function Projects() {
               <div className="mt-4 flex gap-4">
                 {p.repo && (
                   <a href={p.repo} target="_blank" rel="noreferrer" className={linkClass}>
-                    Codice ↗
+                    <CodeIcon className="h-4 w-4" />
+                    Codice
                   </a>
                 )}
                 {p.demo && (
                   <a href={p.demo} target="_blank" rel="noreferrer" className={linkClass}>
-                    Demo ↗
+                    <DemoIcon className="h-4 w-4" />
+                    Demo
                   </a>
                 )}
               </div>

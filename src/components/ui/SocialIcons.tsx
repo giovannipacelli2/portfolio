@@ -8,6 +8,35 @@ const base = {
   'aria-hidden': true,
 } as const
 
+// Icone a tratto (stile Lucide): sovrascrivono il riempimento di `base`.
+const stroke = {
+  fill: 'none',
+  stroke: 'currentColor',
+  strokeWidth: 2,
+  strokeLinecap: 'round',
+  strokeLinejoin: 'round',
+} as const
+
+export function CodeIcon({ className }: IconProps) {
+  return (
+    <svg {...base} {...stroke} className={className}>
+      <path d="m18 16 4-4-4-4" />
+      <path d="m6 8-4 4 4 4" />
+      <path d="m14.5 4-5 16" />
+    </svg>
+  )
+}
+
+export function DemoIcon({ className }: IconProps) {
+  return (
+    <svg {...base} {...stroke} className={className}>
+      <path d="M15 3h6v6" />
+      <path d="M10 14 21 3" />
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    </svg>
+  )
+}
+
 export function GithubIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className}>
