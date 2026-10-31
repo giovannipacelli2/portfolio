@@ -1,6 +1,10 @@
 import { usePortfolio } from '../../hooks/usePortfolio'
 import { Reveal } from '../ui/Reveal'
 import { SectionTitle } from '../ui/SectionTitle'
+import { GithubIcon, LinkedinIcon } from '../ui/SocialIcons'
+
+const socialClass =
+  'inline-flex min-h-11 cursor-pointer items-center gap-2 font-mono text-sm text-muted transition-colors duration-200 hover:text-accent'
 
 export function Contact() {
   const { profile } = usePortfolio()
@@ -20,13 +24,15 @@ export function Contact() {
         </a>
         <ul className="mt-6 flex gap-6">
           <li>
-            <a href={profile.links.github} target="_blank" rel="noreferrer" className="inline-flex min-h-11 cursor-pointer items-center font-mono text-sm text-muted transition-colors duration-200 hover:text-accent">
-              GitHub ↗
+            <a href={profile.links.github} target="_blank" rel="noreferrer" className={socialClass}>
+              <GithubIcon className="h-5 w-5" />
+              GitHub
             </a>
           </li>
           <li>
-            <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className="inline-flex min-h-11 cursor-pointer items-center font-mono text-sm text-muted transition-colors duration-200 hover:text-accent">
-              LinkedIn ↗
+            <a href={profile.links.linkedin} target="_blank" rel="noreferrer" className={socialClass}>
+              <LinkedinIcon className="h-5 w-5" />
+              LinkedIn
             </a>
           </li>
         </ul>
