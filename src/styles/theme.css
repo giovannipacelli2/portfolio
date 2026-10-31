@@ -13,8 +13,6 @@
   --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
   --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
 
-  --shadow-glow: 0 0 24px rgb(42 254 20 / 0.25);
-  --shadow-glow-sm: 0 0 10px rgb(42 254 20 / 0.45);
-
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-glow: 0 0 24px color-mix(in srgb, var(--color-accent) 25%, transparent);
+  --shadow-glow-sm: 0 0 10px color-mix(in srgb, var(--color-accent) 45%, transparent);
 }

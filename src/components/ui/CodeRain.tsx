@@ -11,7 +11,6 @@ interface Drop {
 
 const FONT_SIZE = 12
 const LINE_HEIGHT = 16
-const COLOR = '42, 254, 20'
 
 const pick = <T,>(arr: T[]) => arr[Math.floor(Math.random() * arr.length)]
 
@@ -36,6 +35,11 @@ export function CodeRain({ density = 0.00004 }: { density?: number }) {
     const ctx = canvas?.getContext('2d')
     if (!canvas || !ctx) return
 
+    // Colore e font arrivano dal tema (theme.css), non sono duplicati qui.
+    const css = getComputedStyle(document.documentElement)
+    const color = css.getPropertyValue('--color-accent').trim()
+    const fontFamily = css.getPropertyValue('--font-mono').trim()
+
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     let width = 0
     let height = 0
@@ -57,14 +61,16 @@ export function CodeRain({ density = 0.00004 }: { density?: number }) {
 
     const draw = (dt: number) => {
       ctx.clearRect(0, 0, width, height)
-      ctx.font = `${FONT_SIZE}px "JetBrains Mono", monospace`
+      ctx.font = `${FONT_SIZE}px ${fontFamily}`
       ctx.textBaseline = 'top'
+      ctx.fillStyle = color
       for (const d of drops) {
         d.y += d.speed * dt
         if (d.y > height) Object.assign(d, createDrop(width, height, false))
-        ctx.fillStyle = `rgba(${COLOR}, ${d.alpha})`
+        ctx.globalAlpha = d.alpha
         d.lines.forEach((line, i) => ctx.fillText(line, d.x, d.y + i * LINE_HEIGHT))
       }
+      ctx.globalAlpha = 1
     }
 
     const frame = (t: number) => {

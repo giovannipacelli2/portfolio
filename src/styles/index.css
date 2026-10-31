@@ -31,6 +31,6 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 10px rgb(42 254 20 / 0.5);
+    text-shadow: 0 0 10px color-mix(in srgb, var(--color-accent) 50%, transparent);
   }
 }
