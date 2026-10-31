@@ -1,5 +1,5 @@
-/* Variabili di tema: unica fonte di verità per colori, font e ombre.
-   Con Tailwind v4 ogni --color-* diventa una utility (bg-bg, text-accent, ...). */
+/* Theme variables: single source of truth for colors, fonts and shadows.
+   With Tailwind v4 every --color-* becomes a utility (bg-bg, text-accent, ...). */
 @theme {
   --color-bg: #050805;
   --color-surface: #0b120b;

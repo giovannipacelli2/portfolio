@@ -1,11 +1,11 @@
-// Unica fonte dati del sito: modifica qui e la UI si aggiorna.
+// Single data source of the site: edit here and the UI updates.
 
 export type SkillCategory = 'frontend' | 'backend' | 'database' | 'devops'
 
 export interface Skill {
   name: string
   category: SkillCategory
-  /** Da 1 a 5 */
+  /** From 1 to 5 */
   level: 1 | 2 | 3 | 4 | 5
 }
 

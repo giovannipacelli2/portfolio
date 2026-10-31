@@ -1,5 +1,5 @@
-// Blocchi di codice che cadono nell'hero. Aggiungine quanti vuoi:
-// ogni elemento è un blocco (righe separate da \n) estratto a caso.
+// Code blocks that fall in the hero. Add as many as you like:
+// each item is a block (lines separated by \n) picked at random.
 
 export type SnippetLang = 'javascript' | 'php' | 'laravel' | 'html'
 

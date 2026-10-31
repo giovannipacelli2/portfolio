@@ -19,14 +19,14 @@ function createDrop(width: number, height: number, initial: boolean): Drop {
   return {
     lines,
     x: Math.random() * width,
-    // All'avvio i blocchi sono sparsi su tutta l'altezza, poi ripartono da sopra.
+    // On start the blocks are spread over the full height, then they respawn from the top.
     y: initial ? Math.random() * height : -lines.length * LINE_HEIGHT,
-    speed: 25 + Math.random() * 55, // px al secondo
+    speed: 25 + Math.random() * 55, // px per second
     alpha: 0.08 + Math.random() * 0.22,
   }
 }
 
-/** Pioggia di piccoli blocchi di codice su <canvas>, in pausa se fuori schermo. */
+/** Rain of small code blocks on a <canvas>, paused when off-screen. */
 export function CodeRain({ density = 0.00004 }: { density?: number }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -35,7 +35,7 @@ export function CodeRain({ density = 0.00004 }: { density?: number }) {
     const ctx = canvas?.getContext('2d')
     if (!canvas || !ctx) return
 
-    // Colore e font arrivano dal tema (theme.css), non sono duplicati qui.
+    // Color and font come from the theme (theme.css), they are not duplicated here.
     const css = getComputedStyle(document.documentElement)
     const color = css.getPropertyValue('--color-accent').trim()
     const fontFamily = css.getPropertyValue('--font-mono').trim()
@@ -82,7 +82,7 @@ export function CodeRain({ density = 0.00004 }: { density?: number }) {
 
     resize()
     if (reduceMotion) {
-      draw(0) // frame statico
+      draw(0) // static frame
     } else {
       raf = requestAnimationFrame((t) => {
         last = t

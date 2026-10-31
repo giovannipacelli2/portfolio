@@ -8,7 +8,7 @@ const base = {
   'aria-hidden': true,
 } as const
 
-// Icone a tratto (stile Lucide): sovrascrivono il riempimento di `base`.
+// Stroke icons (Lucide style): they override the fill set in `base`.
 const stroke = {
   fill: 'none',
   stroke: 'currentColor',

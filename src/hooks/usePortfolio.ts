@@ -8,7 +8,7 @@ import {
   type SkillCategory,
 } from '../data/portfolio'
 
-/** Hook centralizzato: raccoglie tutti i dati e gli helper usati dalla UI. */
+/** Centralized hook: collects all the data and helpers used by the UI. */
 export function usePortfolio() {
   return useMemo(() => {
     const skillsByCategory = (Object.keys(categoryLabels) as SkillCategory[])

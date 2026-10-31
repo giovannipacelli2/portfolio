@@ -3,13 +3,13 @@ import type { ReactNode } from 'react'
 
 interface RevealProps {
   children: ReactNode
-  /** Ritardo in secondi, utile per lo stagger tra elementi */
+  /** Delay in seconds, useful for staggering elements */
   delay?: number
   y?: number
   className?: string
 }
 
-/** Fa comparire il contenuto (fade + slide) quando entra nel viewport. */
+/** Reveals the content (fade + slide) when it enters the viewport. */
 export function Reveal({ children, delay = 0, y = 24, className }: RevealProps) {
   const reduce = useReducedMotion()
   return (

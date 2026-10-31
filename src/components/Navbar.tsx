@@ -30,7 +30,7 @@ export function Navbar({ name }: { name: string }) {
           &gt; {name.split(' ')[0].toLowerCase()}_
         </a>
 
-        {/* Da sm in su: link in linea */}
+        {/* From sm up: inline links */}
         <ul className="hidden gap-1 sm:flex">
           {links.map((l) => (
             <li key={l.href}>
@@ -41,7 +41,7 @@ export function Navbar({ name }: { name: string }) {
           ))}
         </ul>
 
-        {/* Sotto sm: pulsante menu */}
+        {/* Below sm: menu button */}
         <button
           type="button"
           aria-label={open ? 'Chiudi menu' : 'Apri menu'}
