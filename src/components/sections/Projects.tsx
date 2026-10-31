@@ -41,7 +41,7 @@ export function Projects() {
                     className="block bg-surface px-4 pb-0.5 pt-0.5 font-mono text-xs text-shock"
                     style={{ clipPath: tabShape(10) }}
                   >
-                    top
+                    latest
                   </span>
                 </span>
               )}
