@@ -124,6 +124,44 @@ export const projects: Project[] = [
     },
   },
   {
+    slug: 'php-gatekeeper-proxy',
+    title: 'PhpGateKeeperProxy',
+    description:
+      'Micro-script PHP senza dipendenze che firma con HMAC le richieste verso il backend, tenendo il segreto lato server, e valida un token Cloudflare Turnstile prima di inoltrarle.',
+    stack: ['PHP', 'Docker', 'Turnstile'],
+    repo: 'https://github.com/giovannipacelli2/PhpGateKeeperProxy',
+    details: {
+      overview:
+        'Un frontend con la apiKey nel bundle espone di fatto un segreto pubblico. Questo script tiene il segreto solo lato server e firma le richieste per conto del visitatore, così il controllo di firma del backend verifica davvero qualcosa.',
+      features: [
+        'Un solo entry point, nessun framework e nessuna dipendenza Composer',
+        'Accetta solo richieste POST, le altre ricevono 405',
+        'Controllo di Origin e Referer contro l\'abuso da browser',
+        'Validazione obbligatoria del token Cloudflare Turnstile prima dell\'inoltro',
+        'Limite di 64 KiB sul body della richiesta',
+      ],
+    },
+  },
+  {
+    slug: 'php-redirector-plus',
+    title: 'PhpRedirectorPlus',
+    description:
+      'Redirect tracker in PHP puro, adatto a WordPress: registra la richiesta e la rimanda alla destinazione, estendibile con plugin interni o codice personalizzato.',
+    stack: ['PHP', 'Docker'],
+    repo: 'https://github.com/giovannipacelli2/PhpRedirectorPlus',
+    details: {
+      overview:
+        'Redirect tracker minimale in PHP puro: ogni richiesta viene registrata e poi rimandata a una URL di destinazione. Pensato per campagne con link e QR code, anche su hosting WordPress.',
+      features: [
+        'Un solo file da esporre, senza dipendenze né framework',
+        'Configurazione tramite file .env (HOME_URL obbligatoria)',
+        'Plugin attivabili da configurazione',
+        'callback.php per eseguire logica prima del redirect',
+        'messages.php per personalizzare le risposte JSON',
+      ],
+    },
+  },
+  {
     slug: 'teamflow-fe',
     title: 'TeamFlow (frontend)',
     description:
@@ -161,44 +199,6 @@ export const projects: Project[] = [
         'Servizi iniettabili nei controller e risposte di errore in JSON',
         'Migrazioni e seeder per installare il database con dati di prova',
         'Documentazione Swagger delle API',
-      ],
-    },
-  },
-  {
-    slug: 'php-gatekeeper-proxy',
-    title: 'PhpGateKeeperProxy',
-    description:
-      'Micro-script PHP senza dipendenze che firma con HMAC le richieste verso il backend, tenendo il segreto lato server, e valida un token Cloudflare Turnstile prima di inoltrarle.',
-    stack: ['PHP', 'Docker', 'Turnstile'],
-    repo: 'https://github.com/giovannipacelli2/PhpGateKeeperProxy',
-    details: {
-      overview:
-        'Un frontend con la apiKey nel bundle espone di fatto un segreto pubblico. Questo script tiene il segreto solo lato server e firma le richieste per conto del visitatore, così il controllo di firma del backend verifica davvero qualcosa.',
-      features: [
-        'Un solo entry point, nessun framework e nessuna dipendenza Composer',
-        'Accetta solo richieste POST, le altre ricevono 405',
-        'Controllo di Origin e Referer contro l\'abuso da browser',
-        'Validazione obbligatoria del token Cloudflare Turnstile prima dell\'inoltro',
-        'Limite di 64 KiB sul body della richiesta',
-      ],
-    },
-  },
-  {
-    slug: 'php-redirector-plus',
-    title: 'PhpRedirectorPlus',
-    description:
-      'Redirect tracker in PHP puro, adatto a WordPress: registra la richiesta e la rimanda alla destinazione, estendibile con plugin interni o codice personalizzato.',
-    stack: ['PHP', 'Docker'],
-    repo: 'https://github.com/giovannipacelli2/PhpRedirectorPlus',
-    details: {
-      overview:
-        'Redirect tracker minimale in PHP puro: ogni richiesta viene registrata e poi rimandata a una URL di destinazione. Pensato per campagne con link e QR code, anche su hosting WordPress.',
-      features: [
-        'Un solo file da esporre, senza dipendenze né framework',
-        'Configurazione tramite file .env (HOME_URL obbligatoria)',
-        'Plugin attivabili da configurazione',
-        'callback.php per eseguire logica prima del redirect',
-        'messages.php per personalizzare le risposte JSON',
       ],
     },
   },

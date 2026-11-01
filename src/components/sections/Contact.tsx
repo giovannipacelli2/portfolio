@@ -11,7 +11,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="mx-auto max-w-5xl px-4 py-24">
-      <SectionTitle index="03 // contact" title="Contatti" />
+      <SectionTitle index="// 03_contact" title="Contatti" />
       <Reveal>
         <p className="max-w-xl text-lg text-muted">
           Hai un progetto o vuoi solo salutare? Scrivimi.

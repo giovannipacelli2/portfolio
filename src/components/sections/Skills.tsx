@@ -7,7 +7,7 @@ export function Skills() {
 
   return (
     <section id="skills" className="mx-auto max-w-5xl px-4 py-24">
-      <SectionTitle index="01 // skills" title="Competenze" />
+      <SectionTitle index="// 01_skills" title="Competenze" />
       <div className="grid gap-6 sm:grid-cols-2">
         {skillsByCategory.map((group, i) => (
           <Reveal key={group.category} delay={i * 0.08}>

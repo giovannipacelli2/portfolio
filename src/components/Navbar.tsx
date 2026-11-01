@@ -27,7 +27,7 @@ export function Navbar({ name }: { name: string }) {
         aria-label="Principale"
         className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4"
       >
-        <Link to="/#top" className="font-mono text-sm font-bold text-accent">
+        <Link to="/#top" className="font-mono text-sm font-bold text-glow hover:text-accent focus:text-accent transition-all duration-300">
           &gt; {name.split(' ')[0].toLowerCase()}_
         </Link>
 
@@ -49,7 +49,7 @@ export function Navbar({ name }: { name: string }) {
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen((o) => !o)}
-          className="-mr-2 inline-flex h-11 w-11 cursor-pointer items-center justify-center text-accent sm:hidden"
+          className="-mr-2 inline-flex h-11 w-11 cursor-pointer items-center justify-center text-glow sm:hidden hover:text-accent focus:text-accent transition-all duration-300"
         >
           <svg
             width="24"
