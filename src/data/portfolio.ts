@@ -60,8 +60,10 @@ export const categoryLabels: Record<SkillCategory, string> = {
 }
 
 export const skills: Skill[] = [
-  { name: 'React', category: 'frontend', level: 3 },
-  { name: 'TypeScript', category: 'frontend', level: 3 },
+  { name: 'React', category: 'frontend', level: 4 },
+  { name: 'React Native', category: 'frontend', level: 3 },
+  { name: 'Angular', category: 'frontend', level: 5 },
+  { name: 'TypeScript', category: 'frontend', level: 4 },
   { name: 'Tailwind CSS', category: 'frontend', level: 3 },
   { name: 'Laravel', category: 'backend', level: 5 },
   { name: 'PHP', category: 'backend', level: 4 },
@@ -71,6 +73,8 @@ export const skills: Skill[] = [
   { name: 'Git', category: 'devops', level: 4 },
   { name: 'GitHub Actions', category: 'devops', level: 3 },
   { name: 'Docker', category: 'devops', level: 3 },
+  { name: 'OpenAPI', category: 'backend', level: 5 },
+  { name: 'GCP', category: 'devops', level: 4 },
 ]
 
 export const projects: Project[] = [
@@ -88,7 +92,7 @@ export const projects: Project[] = [
       overview:
         'Sito vetrina di Auréas, sviluppato come single page application e pubblicato. Il codice è privato, ma il sito è online. Il frontend comunica con il backend Laravel tramite un client TypeScript generato dalla specifica OpenAPI, e il form di contatto è protetto da Cloudflare Turnstile.',
       features: [
-        'React 19 e TypeScript, con build e tipi verificati prima di ogni rilascio',
+        'React e TypeScript, con build e tipi verificati prima di ogni rilascio',
         'Interfaccia con Material UI e componenti Radix, animazioni con Motion',
         'Client API generato automaticamente dalla specifica OpenAPI del backend',
         'Form di richiesta contatti con validazione (React Hook Form) e controllo anti-bot Turnstile',
@@ -111,8 +115,8 @@ export const projects: Project[] = [
       overview:
         'Piattaforma interna di Auréas, pensata per nutrizionisti, personal trainer, osteopati, istruttori di pilates e massoterapisti. Raccoglie i contatti arrivati dal sito, li trasforma in pazienti e accompagna il lavoro del professionista fino alle visite e ai piani alimentari. Il codice è privato: qui sotto trovi il percorso con le schermate.',
       features: [
-        'Pannello Angular 21 con componenti standalone, Signals e UI ng-zorro con Tailwind',
-        'API Laravel 12 con autenticazione JWT (token di accesso e di refresh) e ruoli con permessi',
+        'Pannello Angular con componenti standalone, Signals e UI ng-zorro con Tailwind',
+        'API Laravel con autenticazione JWT (token di accesso e di refresh) e ruoli con permessi',
         'Contratto OpenAPI unico: il client Angular e i DTO PHP sono generati dalla stessa specifica',
         'Webhook per i lead, controllo anti-duplicati e rate limiting',
         'Questionari versionati per professione, con form costruiti dinamicamente dal modello',
@@ -178,7 +182,6 @@ export const projects: Project[] = [
         'Visualizzazione dei task condivisi da altri utenti',
         'Client API generato dal file Swagger del backend',
       ],
-      // Section: lazy(() => import('../projects/TeamflowArchitecture')),
     },
   },
   {
