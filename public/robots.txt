@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giovannipacelli2.github.io/portfolio/sitemap.xml
