@@ -1,2 +1,9 @@
 /assets/img/backup
 /assets/img/backup/*
+**/.DS_Store
+node_modules
+src
+dist
+assets-src
+tsconfig.tsbuildinfo
+.env*
