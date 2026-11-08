@@ -44,7 +44,16 @@ export interface Project {
 export const profile = {
   name: 'Giovanni Pacelli',
   role: 'Fullstack Developer',
-  tagline: 'Costruisco applicazioni web dal database all\'interfaccia.',
+  // tagline: 'Costruisco applicazioni web dal database all\'interfaccia.',
+  tagline: null,
+  bio: [
+    'Sono Giovanni, da sempre appassionato di informatica.',
+    'Mi sono avvicinato a questo mondo da bambino, costruendo il mio primo PC da pezzi riciclati.',
+    'Oggi l\'AI fa parte delle mie giornate: skills, agenti, code reviews e un\'organizzazione intelligente dei file per gli LLM, pensata per risparmiare token e mantenere **l\'hot context.**',
+    'Sfato i luoghi comuni: sono un programmatore poco nerd, un papà e ho parecchie passioni: musica, palestra, arti marziali.',
+    'Mi caratterizza l\'essere molto preciso: odio il codice illeggibile! Ma ho anche dei difetti.',
+  ],
+  motto: 'Dividi un problema in piccoli sotto-problemi.',
   email: 'giovanni.pacelli.dev@gmail.com',
   links: {
     github: 'https://github.com/giovannipacelli2',
